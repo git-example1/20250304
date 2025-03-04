@@ -1,0 +1,46 @@
+*{
+    /* 框線：實心，粗細2px，顏色 */
+    /* border: solid 2px #FF8040; */
+}
+html,body{
+    background-color: #FFD1A4;
+    height: 100%;
+    width: 100%; 
+    display: flex; 
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 */
+}
+.box{
+    /* bgc = background-color  */
+    background-color: #FFF3EE;
+    /* 寬度為380px，置中在視窗中間 */
+    width: 380px;
+    margin: 0 auto;
+
+    /* 上下padding為20px，左右padding為40px */
+    /* padding: 20px 40px;
+    /* 上下margin為100px，左右margin為0 */
+    /* margin: 100px 0;
+    /* 圓角：10px */
+    /* border-radius: 10px;
+    /* 陰影：水平偏移0px，垂直偏移0px，模糊半徑10px，顏色rgba(0,0,0,0.1) */
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+}
+.top{
+    background-image: url(https://pic.pimg.tw/sidney6811/1529508979-1559019819_n.jpg);
+    background-size: cover;
+    height: 330px;
+    position: relative;
+    display: flex;
+    align-items: flex-end; /* 垂直置底 */
+}
+.top h2{
+    color: azure;
+    margin-bottom: 20px;
+    margin-left: 10px;
+
+    padding: 5px ;
+    /* 請把文字置於top左下角 */
+    position: absolute;
+    bottom: 0;
+}
