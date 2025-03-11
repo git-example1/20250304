@@ -3,7 +3,7 @@
     /* border: solid 2px #FF8040; */
 }
 html,body{
-    background-color: #FFD1A4;
+    background-color: #d59d65;
     height: 100%;
     width: 100%; 
     display: flex; 
@@ -12,7 +12,7 @@ html,body{
 }
 .box{
     /* bgc = background-color  */
-    background-color: #FFF3EE;
+    background-color: #fbf7f1;
     /* 寬度為380px，置中在視窗中間 */
     width: 380px;
     margin: 0 auto;
@@ -22,10 +22,10 @@ html,body{
     /* 上下margin為100px，左右margin為0 */
     /* margin: 100px 0;
     /* 圓角：10px */
-    /* border-radius: 10px;
-    /* 陰影：水平偏移0px，垂直偏移0px，模糊半徑10px，顏色rgba(0,0,0,0.1) */
-    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+    /* border-radius: 10px;*/
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* 右下角產生寬為 10px 的黑色陰影 */
 }
+
 .top{
     background-image: url(https://pic.pimg.tw/sidney6811/1529508979-1559019819_n.jpg);
     background-size: cover;
@@ -43,4 +43,80 @@ html,body{
     /* 請把文字置於top左下角 */
     position: absolute;
     bottom: 0;
+    /*1請設定一個從下到上且為從黑道白的漸層，透明度為0.4，高度不超過字體高度*/
+    background: linear-gradient(to top, rgba(0,0,0,0.4), rgba(255,255,255,0));
+    /*2請設定文字的陰影，水平偏移0px，垂直偏移0px，模糊半徑5px，顏色黑色*/
+    text-shadow: 0 0 5px black;
 }
+.top .rectangle {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 30px;
+    height: 100px;
+    background-color: #ff7d00;
+}
+.smallText {
+    font-size: 0.8em;
+}
+.circle-container {
+    display: flex; /* 水平排列 */
+    justify-content: space-around; /* 等距排列 */
+    position: absolute; /* 絕對定位 */
+    bottom: -20px; /* 距離底部-10px */
+    right: 25px;
+}
+.circle {
+    width: 50px; 
+    height: 50px;
+    background-color: #ff7d00;
+    border-radius: 50%; /* 圓形 */
+}
+.bottom {
+    height: 180px;
+    margin-top: 30px; /* 增加上方間距 */
+}
+.bottom ul {
+    list-style-type: none; /* 移除符號 */
+    padding: 0;
+    margin: 0;
+}
+.bottom li {
+    padding-left: 20px; /* 左邊空出 20px */
+    margin-bottom: 10px; /* 增加標籤之間的間距 */
+}
+.bottom li span {
+    font-size: 0.9em; /* 字體變小 */
+}
+.btn-container {
+    display: flex; 
+    justify-content: space-between; /* 按鈕等距排列 */
+    padding: 0 20px; /* 左右各空 100px */
+}
+.btn {
+    display: inline-block; /* 顯示為行內元素 */
+    width: calc(50% - 90px); /* 每個按鈕占50%寬度，減去中間空 100px 的一半 */
+    padding: 10px; 
+    text-align: center; 
+    border: 1px solid black; /* 1px 黑色框線 */
+    background-color: #ff7d00;
+    color: black; /* 文字顏色改為黑色 */
+    text-decoration: none; /* 移除底線 */
+    border-radius: 5px; /* 圓角 */
+    cursor: pointer; /* 滑鼠移上去變成手指 */
+    margin-top: 20px; /* 往下再移動 10px */
+    transition: background-color 0.1s, color 0.1s; /* 添加過渡效果 */
+}
+.btn:hover {
+    background-color: #f6cfa8; /* 背景色變暗 */
+    color: #ff7d00; /* 文字變為白 */
+}
+.btnwebsite{
+    border: none; /* 移除左邊按鈕的框線 */
+
+}
+.btnnews {
+    background-color: white; /* 右邊按鈕改為白色 */
+}
+
+
